@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/cardbgcolor"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/ripple">
+
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_voicenote" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imgDelete"
+            android:layout_toEndOf="@+id/rl_image"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/songname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/songtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/songname"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:foreground="@drawable/ripple"
+            android:padding="12dp"
+            android:src="@drawable/ic_delete_white_24dp"
+            android:visibility="gone"
+            app:tint="@color/white" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

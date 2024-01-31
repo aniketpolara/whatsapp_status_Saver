@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GBVersionForWhatsapp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/cardbgcolor</item>
+        <item name="colorPrimaryVariant">@color/cardbgcolor</item>
+        <item name="colorOnPrimary">@color/cardbgcolor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="iv_pencil">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/edit_icon</item>
+        <item name="layout_constraintBottom_toBottomOf">@null</item>
+        <item name="layout_constraintEnd_toEndOf">@null</item>
+        <item name="layout_constraintHorizontal_bias">0.95</item>
+        <item name="layout_constraintStart_toStartOf">@null</item>
+        <item name="layout_constraintTop_toTopOf">@null</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="SearchView" parent="@style/Widget.AppCompat.SearchView">
+    </style>
+    <style name="AppTheme_PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+    </style>
+    <style name="AppTheme_AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+</resources>

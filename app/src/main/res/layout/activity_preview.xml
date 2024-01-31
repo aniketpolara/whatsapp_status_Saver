@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layoutDirection="ltr">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_7sdp"
+        android:src="@drawable/back"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:gravity="right|center_vertical|center_horizontal|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/downloadIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="@string/save"
+                android:textColor="@color/pre_text_color"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/btn_bg"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_save"
+                app:tint="@color/pre_icon_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="@string/share"
+                android:textColor="@color/pre_text_color"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/btn_bg"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_share"
+                app:tint="@color/pre_icon_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="@string/delete"
+                android:textColor="@color/pre_text_color"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/btn_bg"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/pre_icon_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/repostIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/ic_text_bg_pre"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="@string/repost"
+                android:textColor="@color/pre_text_color"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_33sdp"
+                android:background="@drawable/btn_bg"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_whatsapp"
+                app:tint="@color/pre_icon_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

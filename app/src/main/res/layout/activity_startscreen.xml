@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/whatsapp_tools"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_main"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <ImageView
+                android:id="@+id/ll_scanner"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/webscanner"/>
+
+            <ImageView
+                android:id="@+id/ll_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/statusshare"/>
+            <ImageView
+                android:id="@+id/ll_code"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/qrcode"/>
+
+            <ImageView
+                android:id="@+id/ll_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/wpdirecory"/>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/ll_clear"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/delete_icon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/delete_recovery"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/searchprofile"/>
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/chat"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

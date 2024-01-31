@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/flashlight"
+            android:foreground="@drawable/ripple_flaticon"
+            android:tint="@color/white"
+            app:backgroundTint="@color/cardbgcolor"
+            app:borderWidth="2dp"
+            app:srcCompat="@drawable/ic_baseline_flash_on_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/auto_focused"
+            android:foreground="@drawable/ripple_flaticon"
+            android:src="@drawable/ic_baseline_filter_center_focus_24"
+            android:tint="@color/white"
+            app:backgroundTint="@color/cardbgcolor"
+            app:borderWidth="2dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/camera"
+            android:foreground="@drawable/ripple_flaticon"
+            android:src="@drawable/ic_baseline_flip_camera_ios_24"
+            android:tint="@color/white"
+            app:backgroundTint="@color/cardbgcolor"
+            app:borderWidth="2dp"
+            app:elevation="0dp" />
+    </LinearLayout>
+</RelativeLayout>

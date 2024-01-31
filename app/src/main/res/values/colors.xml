@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#ffff</color>
+    <color name="cardbgcolor">#10A34B</color>
+    <color name="bg_btn_center">#0f73c3</color>
+    <color name="bg_btn_end">#0c5e9f</color>
+    <color name="bg_btn_start">#2196f3</color>
+    <color name="box">#0d121b</color>
+    <color name="btn_icon">#1db06f</color>
+    <color name="btn_text">#1db06f</color>
+    <color name="chkbox_color">#ffffff</color>
+    <color name="download">#2788e4</color>
+    <color name="gray">#c4c2c2</color>
+    <color name="green">#040c33</color>
+    <color name="grey">#989797</color>
+    <color name="header_text_color">#40594A</color>
+    <color name="main_bg_color">#f9fbfd</color>
+    <color name="pre_icon_color">#fff</color>
+    <color name="pre_text_color">#1db06f</color>
+    <color name="round_btn_bg">#80000000</color>
+    <color name="selected">#80acaaaa</color>
+    <color name="tab_txt_press">#ffffff</color>
+    <color name="tab_txt_unpress">#80FFFFFF</color>
+    <color name="text_bg_pre">#fff</color>
+    <color name="tools_bg_center">#0f73c3</color>
+    <color name="tools_bg_end">#0c5e9f</color>
+    <color name="tools_bg_start">#2196f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="colorPrimary">#0e1118</color>
+</resources>
